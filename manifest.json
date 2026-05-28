@@ -1,8 +1,9 @@
 {
   "name": "Salary Negotiation Advisor",
   "short_name": "salary-negot",
-  "start_url": "/",
+  "start_url": "/salary-negotiation-advisor/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#6366f1"
+  "theme_color": "#6366f1",
+  "scope": "/salary-negotiation-advisor/"
 }
