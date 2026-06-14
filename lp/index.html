@@ -37,33 +37,33 @@ img{max-width:100%;height:auto;display:block;}
 /* ── HERO ── */
 .hero{position:relative;min-height:580px;overflow:hidden;display:flex;align-items:center;}
 .hero-bg{position:absolute;inset:0;background-image:url('../assets/photos/photo_01.jpg');background-size:cover;background-position:center top;z-index:0;}
-.hero-ov{position:absolute;inset:0;background:linear-gradient(130deg,rgba(10,20,60,.85) 0%,rgba(29,78,216,.7) 100%);z-index:1;}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(130deg,rgba(255,255,255,.97) 55%,rgba(219,234,254,.75) 100%);z-index:1;}
 .hero-in{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:64px 24px;display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:center;width:100%;}
 @media(max-width:900px){.hero-in{grid-template-columns:1fr;} .hero-r{display:none;}}
-.hero-badge{display:inline-block;background:rgba(255,255,255,0.15);color:#fff;font-size:12px;font-weight:600;padding:4px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.3);margin-bottom:16px;}
-.hero-title{font-size:clamp(26px,4vw,44px);font-weight:800;color:#fff;line-height:1.25;margin-bottom:12px;}
-.hero-sub{font-size:16px;color:rgba(255,255,255,.88);margin-bottom:28px;line-height:1.7;}
-.hero-salary{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:16px 20px;display:inline-block;margin-bottom:28px;}
-.hero-salary-lbl{font-size:11px;color:rgba(255,255,255,.65);margin-bottom:4px;font-weight:600;letter-spacing:1px;}
-.hero-salary-num{font-size:clamp(28px,4vw,40px);font-weight:800;color:#fff;line-height:1;}
+.hero-badge{display:inline-block;background:#dbeafe;color:#1D4ED8;font-size:12px;font-weight:600;padding:4px 14px;border-radius:20px;border:1px solid #bfdbfe;margin-bottom:16px;}
+.hero-title{font-size:clamp(26px,4vw,44px);font-weight:800;color:#1e3a8a;line-height:1.25;margin-bottom:12px;}
+.hero-sub{font-size:16px;color:#374151;margin-bottom:28px;line-height:1.7;}
+.hero-salary{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:16px 20px;display:inline-block;margin-bottom:28px;}
+.hero-salary-lbl{font-size:11px;color:#6b7280;margin-bottom:4px;font-weight:600;letter-spacing:1px;}
+.hero-salary-num{font-size:clamp(28px,4vw,40px);font-weight:800;color:#1e3a8a;line-height:1;}
 .hero-up{display:inline-block;background:#059669;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;vertical-align:middle;}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;}
 .btn-green{background:#059669;color:#fff;padding:16px 32px;border-radius:8px;font-size:16px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:background .15s;}
 .btn-green:hover{background:#047857;}
-.btn-wht{border:2px solid rgba(255,255,255,.6);color:#fff;padding:14px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:background .15s;}
-.btn-wht:hover{background:rgba(255,255,255,.1);}
+.btn-wht{border:2px solid #1D4ED8;color:#1D4ED8;padding:14px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:background .15s;}
+.btn-wht:hover{background:#eff6ff;}
 .hero-trust{display:flex;gap:20px;flex-wrap:wrap;}
-.hero-trust span{font-size:12px;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:4px;}
+.hero-trust span{font-size:12px;color:#6b7280;display:flex;align-items:center;gap:4px;}
 
 /* hero right card */
-.hero-r{background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:24px;}
-.hero-r-ttl{font-size:12px;color:rgba(255,255,255,.7);font-weight:600;margin-bottom:12px;}
+.hero-r{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,.08);}
+.hero-r-ttl{font-size:12px;color:#6b7280;font-weight:600;margin-bottom:12px;}
 .hero-r-img{width:100%;height:150px;object-fit:cover;border-radius:10px;margin-bottom:16px;}
-.hero-r-range{font-size:36px;font-weight:800;color:#fff;text-align:center;margin-bottom:4px;}
-.hero-r-sub{font-size:11px;color:rgba(255,255,255,.6);text-align:center;margin-bottom:16px;}
+.hero-r-range{font-size:36px;font-weight:800;color:#1e3a8a;text-align:center;margin-bottom:4px;}
+.hero-r-sub{font-size:11px;color:#9ca3af;text-align:center;margin-bottom:16px;}
 .mini-bar{margin-bottom:10px;}
-.mini-bar-lbl{font-size:11px;color:rgba(255,255,255,.7);margin-bottom:3px;}
-.mini-bar-bg{height:7px;background:rgba(255,255,255,.15);border-radius:4px;overflow:hidden;}
+.mini-bar-lbl{font-size:11px;color:#6b7280;margin-bottom:3px;}
+.mini-bar-bg{height:7px;background:#e5e7eb;border-radius:4px;overflow:hidden;}
 .mini-bar-fill{height:100%;border-radius:4px;}
 
 /* ── SECTION BASE ── */
@@ -79,22 +79,23 @@ img{max-width:100%;height:auto;display:block;}
 .pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
 @media(min-width:768px){.pain-grid{grid-template-columns:repeat(4,1fr);}}
 .pain-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
-.pain-card img{width:100%;height:140px;object-fit:cover;}
+.pain-icon-box{padding:28px 16px 20px;text-align:center;background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%);}
+.pain-icon-emoji{font-size:56px;line-height:1;display:block;}
 .pain-card-body{padding:16px;}
 .pain-icon{font-size:22px;margin-bottom:6px;}
 .pain-txt{font-size:14px;font-weight:600;color:#374151;line-height:1.5;}
 
 /* ── FEATURES ── */
-.feat-sec{background:#1D4ED8;}
-.feat-sec .sec-kicker{color:rgba(255,255,255,.7);}
-.feat-sec .sec-h2{color:#fff;}
-.feat-sec .sec-lead{color:rgba(255,255,255,.8);}
+.feat-sec{background:#f0f4ff;}
+.feat-sec .sec-kicker{color:#1D4ED8;}
+.feat-sec .sec-h2{color:#1e3a8a;}
+.feat-sec .sec-lead{color:#6b7280;}
 .feat-grid{display:grid;grid-template-columns:1fr;gap:24px;}
 @media(min-width:768px){.feat-grid{grid-template-columns:repeat(3,1fr);}}
-.feat-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:28px;}
-.feat-num{width:36px;height:36px;background:#059669;color:#fff;font-size:16px;font-weight:800;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
-.feat-ttl{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;}
-.feat-desc{font-size:13px;color:rgba(255,255,255,.8);line-height:1.7;}
+.feat-card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,.05);}
+.feat-num{width:48px;height:48px;background:#1D4ED8;color:#fff;font-size:20px;font-weight:800;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.feat-ttl{font-size:16px;font-weight:700;color:#1f2937;margin-bottom:8px;}
+.feat-desc{font-size:13px;color:#6b7280;line-height:1.7;}
 .feat-img{width:100%;height:120px;object-fit:cover;border-radius:10px;margin-top:16px;}
 
 /* ── STRENGTHS ── */
@@ -130,16 +131,15 @@ img{max-width:100%;height:auto;display:block;}
 .step-desc{font-size:13px;color:#6b7280;line-height:1.7;}
 
 /* ── BENEFITS ── */
-.ben-sec{background:linear-gradient(135deg,#1e3a8a 0%,#1D4ED8 100%);}
-.ben-sec .sec-kicker{color:rgba(255,255,255,.7);}
-.ben-sec .sec-h2{color:#fff;}
+.ben-sec{background:#eff6ff;}
+.ben-sec .sec-kicker{color:#1D4ED8;}
+.ben-sec .sec-h2{color:#1e3a8a;}
 .ben-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
 @media(min-width:768px){.ben-grid{grid-template-columns:repeat(3,1fr);}}
-.ben-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start;}
-.ben-thumb{width:52px;height:52px;border-radius:10px;overflow:hidden;flex-shrink:0;}
-.ben-thumb img{width:100%;height:100%;object-fit:cover;}
-.ben-ttl{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;}
-.ben-desc{font-size:12px;color:rgba(255,255,255,.72);line-height:1.5;}
+.ben-card{background:#fff;border:1px solid #bfdbfe;border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start;}
+.ben-thumb{width:52px;height:52px;border-radius:10px;background:#dbeafe;display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;}
+.ben-ttl{font-size:14px;font-weight:700;color:#1f2937;margin-bottom:4px;}
+.ben-desc{font-size:12px;color:#6b7280;line-height:1.5;}
 
 /* ── TRUST ── */
 .trust-sec{background:#fff;}
@@ -257,30 +257,26 @@ img{max-width:100%;height:auto;display:block;}
     </div>
     <div class="pain-grid">
       <div class="pain-card">
-        <img src="../assets/photos/photo_03.jpg" alt="年収が適正か分からないと悩むビジネスパーソン" loading="lazy">
+        <div class="pain-icon-box"><span class="pain-icon-emoji">😔</span></div>
         <div class="pain-card-body">
-          <div class="pain-icon">😔</div>
           <p class="pain-txt">今の年収が<br>適正なのか<br>分からない</p>
         </div>
       </div>
       <div class="pain-card">
-        <img src="../assets/photos/photo_04.jpg" alt="給与交渉の方法が分からないと悩む人" loading="lazy">
+        <div class="pain-icon-box"><span class="pain-icon-emoji">😰</span></div>
         <div class="pain-card-body">
-          <div class="pain-icon">😰</div>
           <p class="pain-txt">給与交渉したいけど<br>方法が<br>わからない</p>
         </div>
       </div>
       <div class="pain-card">
-        <img src="../assets/photos/photo_05.jpg" alt="転職先への希望年収が言えないと悩む人" loading="lazy">
+        <div class="pain-icon-box"><span class="pain-icon-emoji">🤔</span></div>
         <div class="pain-card-body">
-          <div class="pain-icon">🤔</div>
           <p class="pain-txt">転職先への<br>適切な希望年収が<br>言えない</p>
         </div>
       </div>
       <div class="pain-card">
-        <img src="../assets/photos/photo_06.jpg" alt="昇給交渉を断られることを恐れる人" loading="lazy">
+        <div class="pain-icon-box"><span class="pain-icon-emoji">😨</span></div>
         <div class="pain-card-body">
-          <div class="pain-icon">😨</div>
           <p class="pain-txt">昇給交渉を<br>断られるのが<br>怖い</p>
         </div>
       </div>
@@ -301,19 +297,16 @@ img{max-width:100%;height:auto;display:block;}
         <div class="feat-num">①</div>
         <h3 class="feat-ttl">市場相場データで<br>目標金額の根拠を定量化</h3>
         <p class="feat-desc">職種×業界別の市場相場データを活用。あなたの年収が適正かを数値で可視化し、説得力ある交渉根拠を作ります。</p>
-        <img src="../assets/photos/photo_07.jpg" alt="市場相場データ機能" class="feat-img" loading="lazy">
       </div>
       <div class="feat-card">
         <div class="feat-num">②</div>
         <h3 class="feat-ttl">AI交渉ロールプレイで<br>実践力を強化</h3>
         <p class="feat-desc">AI採用担当役との会話練習機能で実践的な交渉力を強化。本番前に自信をつけて成功率を高めます。</p>
-        <img src="../assets/photos/photo_08.jpg" alt="AIロールプレイ機能" class="feat-img" loading="lazy">
       </div>
       <div class="feat-card">
         <div class="feat-num">③</div>
         <h3 class="feat-ttl">交渉メール・スクリプトを<br>自動生成</h3>
         <p class="feat-desc">診断タイプ別の具体的な交渉スクリプト例文を自動生成。そのまま使えるメールテンプレートも提供します。</p>
-        <img src="../assets/photos/photo_09.jpg" alt="スクリプト自動生成機能" class="feat-img" loading="lazy">
       </div>
     </div>
   </div>
@@ -438,42 +431,42 @@ img{max-width:100%;height:auto;display:block;}
     </div>
     <div class="ben-grid">
       <div class="ben-card">
-        <div class="ben-thumb"><img src="../assets/photos/photo_14.jpg" alt="" loading="lazy"></div>
+        <div class="ben-thumb" aria-hidden="true">📊</div>
         <div>
           <div class="ben-ttl">適正年収が明確になる</div>
           <div class="ben-desc">業界・職種・経験年数から正確な市場価値を数値で把握</div>
         </div>
       </div>
       <div class="ben-card">
-        <div class="ben-thumb"><img src="../assets/photos/photo_15.jpg" alt="" loading="lazy"></div>
+        <div class="ben-thumb" aria-hidden="true">💪</div>
         <div>
           <div class="ben-ttl">自信を持って交渉できる</div>
           <div class="ben-desc">数値根拠のある交渉で成功率が大幅に向上する</div>
         </div>
       </div>
       <div class="ben-card">
-        <div class="ben-thumb"><img src="../assets/photos/photo_16.jpg" alt="" loading="lazy"></div>
+        <div class="ben-thumb" aria-hidden="true">📈</div>
         <div>
           <div class="ben-ttl">年収アップを実現できる</div>
           <div class="ben-desc">適切な戦略で転職・昇給交渉を成功させる</div>
         </div>
       </div>
       <div class="ben-card">
-        <div class="ben-thumb"><img src="../assets/photos/photo_17.jpg" alt="" loading="lazy"></div>
+        <div class="ben-thumb" aria-hidden="true">📝</div>
         <div>
           <div class="ben-ttl">交渉スクリプトが手に入る</div>
           <div class="ben-desc">そのまま使えるメール文例・会話スクリプトを取得</div>
         </div>
       </div>
       <div class="ben-card">
-        <div class="ben-thumb"><img src="../assets/photos/photo_18.jpg" alt="" loading="lazy"></div>
+        <div class="ben-thumb" aria-hidden="true">🗺️</div>
         <div>
           <div class="ben-ttl">転職市場を把握できる</div>
           <div class="ben-desc">業界別の転職動向と年収トレンドが一目でわかる</div>
         </div>
       </div>
       <div class="ben-card">
-        <div class="ben-thumb"><img src="../assets/photos/photo_19.jpg" alt="" loading="lazy"></div>
+        <div class="ben-thumb" aria-hidden="true">🎯</div>
         <div>
           <div class="ben-ttl">長期キャリアを設計できる</div>
           <div class="ben-desc">今後のキャリアパスと年収目標を明確に描けるようになる</div>
