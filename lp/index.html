@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1D4ED8">
+<title>給与交渉シミュレーター｜適正年収×交渉戦略を無料診断</title>
+<meta name="description" content="現在年収・スキル・業界相場を入力するだけで給与交渉の戦略と目標金額を無料診断。交渉スクリプト生成付き。転職・昇給交渉に活用できる無料ツール。">
+<link rel="canonical" href="https://appadaycreator.com/salary-negotiation-advisor/lp/">
+<meta property="og:title" content="給与交渉シミュレーター｜適正年収×交渉戦略を無料診断">
+<meta property="og:description" content="現在年収・スキル・業界相場を入力するだけで給与交渉の戦略と目標金額を無料診断。交渉スクリプト生成付き。">
+<meta property="og:url" content="https://appadaycreator.com/salary-negotiation-advisor/lp/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://appadaycreator.com/salary-negotiation-advisor/ogp.png">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-TXQGZRF9");</script>
+<!-- AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8427583028015858" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;color:#1f2937;line-height:1.7;background:#fff;}
+img{max-width:100%;height:auto;display:block;}
+
+/* ── NAV ── */
+.lp-nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:200;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+.lp-nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px;}
+.lp-logo{color:#1D4ED8;font-size:15px;font-weight:800;text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:6px;}
+.lp-links{display:flex;align-items:center;gap:20px;flex:1;justify-content:center;}
+.lp-links a{color:#374151;text-decoration:none;font-size:13px;font-weight:500;white-space:nowrap;transition:color .15s;}
+.lp-links a:hover{color:#1D4ED8;}
+.lp-nav-cta{background:#059669;color:#fff;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap;transition:background .15s;}
+.lp-nav-cta:hover{background:#047857;}
+@media(max-width:767px){.lp-links{display:none;}}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:580px;overflow:hidden;display:flex;align-items:center;}
+.hero-bg{position:absolute;inset:0;background-image:url('../assets/photos/photo_01.jpg');background-size:cover;background-position:center top;z-index:0;}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(130deg,rgba(10,20,60,.85) 0%,rgba(29,78,216,.7) 100%);z-index:1;}
+.hero-in{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:64px 24px;display:grid;grid-template-columns:1fr 360px;gap:48px;align-items:center;width:100%;}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;} .hero-r{display:none;}}
+.hero-badge{display:inline-block;background:rgba(255,255,255,0.15);color:#fff;font-size:12px;font-weight:600;padding:4px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.3);margin-bottom:16px;}
+.hero-title{font-size:clamp(26px,4vw,44px);font-weight:800;color:#fff;line-height:1.25;margin-bottom:12px;}
+.hero-sub{font-size:16px;color:rgba(255,255,255,.88);margin-bottom:28px;line-height:1.7;}
+.hero-salary{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:12px;padding:16px 20px;display:inline-block;margin-bottom:28px;}
+.hero-salary-lbl{font-size:11px;color:rgba(255,255,255,.65);margin-bottom:4px;font-weight:600;letter-spacing:1px;}
+.hero-salary-num{font-size:clamp(28px,4vw,40px);font-weight:800;color:#fff;line-height:1;}
+.hero-up{display:inline-block;background:#059669;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;margin-left:8px;vertical-align:middle;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;}
+.btn-green{background:#059669;color:#fff;padding:16px 32px;border-radius:8px;font-size:16px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:background .15s;}
+.btn-green:hover{background:#047857;}
+.btn-wht{border:2px solid rgba(255,255,255,.6);color:#fff;padding:14px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:background .15s;}
+.btn-wht:hover{background:rgba(255,255,255,.1);}
+.hero-trust{display:flex;gap:20px;flex-wrap:wrap;}
+.hero-trust span{font-size:12px;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:4px;}
+
+/* hero right card */
+.hero-r{background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:24px;}
+.hero-r-ttl{font-size:12px;color:rgba(255,255,255,.7);font-weight:600;margin-bottom:12px;}
+.hero-r-img{width:100%;height:150px;object-fit:cover;border-radius:10px;margin-bottom:16px;}
+.hero-r-range{font-size:36px;font-weight:800;color:#fff;text-align:center;margin-bottom:4px;}
+.hero-r-sub{font-size:11px;color:rgba(255,255,255,.6);text-align:center;margin-bottom:16px;}
+.mini-bar{margin-bottom:10px;}
+.mini-bar-lbl{font-size:11px;color:rgba(255,255,255,.7);margin-bottom:3px;}
+.mini-bar-bg{height:7px;background:rgba(255,255,255,.15);border-radius:4px;overflow:hidden;}
+.mini-bar-fill{height:100%;border-radius:4px;}
+
+/* ── SECTION BASE ── */
+.sec{padding:72px 24px;}
+.sec-in{max-width:1100px;margin:0 auto;}
+.sec-kicker{font-size:11px;font-weight:700;color:#1D4ED8;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;}
+.sec-h2{font-size:clamp(22px,3vw,32px);font-weight:800;color:#1f2937;margin-bottom:12px;line-height:1.3;}
+.sec-lead{font-size:15px;color:#6b7280;max-width:620px;}
+.sec-hd{margin-bottom:48px;}
+
+/* ── PAIN ── */
+.pain-sec{background:#f9fafb;}
+.pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+@media(min-width:768px){.pain-grid{grid-template-columns:repeat(4,1fr);}}
+.pain-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+.pain-card img{width:100%;height:140px;object-fit:cover;}
+.pain-card-body{padding:16px;}
+.pain-icon{font-size:22px;margin-bottom:6px;}
+.pain-txt{font-size:14px;font-weight:600;color:#374151;line-height:1.5;}
+
+/* ── FEATURES ── */
+.feat-sec{background:#1D4ED8;}
+.feat-sec .sec-kicker{color:rgba(255,255,255,.7);}
+.feat-sec .sec-h2{color:#fff;}
+.feat-sec .sec-lead{color:rgba(255,255,255,.8);}
+.feat-grid{display:grid;grid-template-columns:1fr;gap:24px;}
+@media(min-width:768px){.feat-grid{grid-template-columns:repeat(3,1fr);}}
+.feat-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:28px;}
+.feat-num{width:36px;height:36px;background:#059669;color:#fff;font-size:16px;font-weight:800;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
+.feat-ttl{font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;}
+.feat-desc{font-size:13px;color:rgba(255,255,255,.8);line-height:1.7;}
+.feat-img{width:100%;height:120px;object-fit:cover;border-radius:10px;margin-top:16px;}
+
+/* ── STRENGTHS ── */
+.str-sec{background:#fff;}
+.str-in{display:grid;grid-template-columns:1fr;gap:48px;align-items:center;}
+@media(min-width:768px){.str-in{grid-template-columns:1fr 1fr;}}
+.str-chart{background:#f8fafc;border-radius:16px;padding:28px;}
+.str-chart-ttl{font-size:13px;font-weight:700;color:#374151;margin-bottom:20px;}
+.cbar{margin-bottom:18px;}
+.cbar-lbl{font-size:12px;font-weight:600;color:#374151;margin-bottom:6px;}
+.cbar-row{display:flex;align-items:center;gap:8px;margin-bottom:4px;}
+.cbar-fill{height:28px;border-radius:6px;display:flex;align-items:center;padding:0 10px;color:#fff;font-size:11px;font-weight:700;white-space:nowrap;}
+.str-salary-box{margin-top:20px;padding:16px;background:#eff6ff;border-radius:10px;text-align:center;}
+.str-salary-lbl{font-size:11px;color:#6b7280;margin-bottom:4px;}
+.str-salary-num{font-size:30px;font-weight:800;color:#1D4ED8;}
+.str-salary-up{color:#059669;}
+.str-photo{width:100%;height:200px;object-fit:cover;border-radius:16px;margin-bottom:24px;}
+.str-list{list-style:none;display:flex;flex-direction:column;gap:16px;}
+.str-item{display:flex;gap:12px;align-items:flex-start;}
+.str-chk{width:26px;height:26px;background:#059669;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;margin-top:2px;}
+.str-item-ttl{font-size:15px;font-weight:700;color:#374151;}
+.str-item-sub{font-size:13px;color:#6b7280;margin-top:2px;}
+
+/* ── STEPS ── */
+.step-sec{background:#f0f9ff;}
+.step-grid{display:grid;grid-template-columns:1fr;gap:28px;}
+@media(min-width:768px){.step-grid{grid-template-columns:repeat(3,1fr);}}
+.step-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
+.step-img{width:100%;height:180px;object-fit:cover;}
+.step-body{padding:20px;}
+.step-badge{background:#1D4ED8;color:#fff;width:32px;height:32px;border-radius:50%;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+.step-ttl{font-size:16px;font-weight:700;color:#1f2937;margin-bottom:6px;}
+.step-desc{font-size:13px;color:#6b7280;line-height:1.7;}
+
+/* ── BENEFITS ── */
+.ben-sec{background:linear-gradient(135deg,#1e3a8a 0%,#1D4ED8 100%);}
+.ben-sec .sec-kicker{color:rgba(255,255,255,.7);}
+.ben-sec .sec-h2{color:#fff;}
+.ben-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+@media(min-width:768px){.ben-grid{grid-template-columns:repeat(3,1fr);}}
+.ben-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start;}
+.ben-thumb{width:52px;height:52px;border-radius:10px;overflow:hidden;flex-shrink:0;}
+.ben-thumb img{width:100%;height:100%;object-fit:cover;}
+.ben-ttl{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;}
+.ben-desc{font-size:12px;color:rgba(255,255,255,.72);line-height:1.5;}
+
+/* ── TRUST ── */
+.trust-sec{background:#fff;}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+@media(min-width:768px){.trust-grid{grid-template-columns:repeat(4,1fr);}}
+.trust-card{text-align:center;padding:24px 16px;}
+.trust-icon{font-size:40px;margin-bottom:12px;}
+.trust-ttl{font-size:14px;font-weight:700;color:#1f2937;margin-bottom:4px;}
+.trust-desc{font-size:12px;color:#6b7280;line-height:1.5;}
+.trust-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px;}
+.trust-photos img{width:100%;height:120px;object-fit:cover;border-radius:10px;}
+
+/* ── AFFILIATE ── */
+.aff-sec{background:#f9fafb;padding:48px 24px;}
+.aff-in{max-width:900px;margin:0 auto;}
+.aff-ttl{font-size:16px;font-weight:700;color:#374151;margin-bottom:20px;}
+.aff-grid{display:grid;grid-template-columns:1fr;gap:12px;}
+@media(min-width:600px){.aff-grid{grid-template-columns:repeat(2,1fr);}}
+.aff-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px 20px;display:flex;align-items:center;gap:14px;text-decoration:none;color:#1f2937;transition:box-shadow .2s;}
+.aff-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);}
+.aff-card-img{width:56px;height:56px;border-radius:8px;overflow:hidden;flex-shrink:0;}
+.aff-card-img img{width:100%;height:100%;object-fit:cover;}
+.aff-card-ttl{font-size:14px;font-weight:700;color:#1f2937;margin-bottom:2px;}
+.aff-card-sub{font-size:12px;color:#6b7280;}
+
+/* ── FOOTER CTA ── */
+.ftcta{background:#0f172a;padding:72px 24px;text-align:center;}
+.ftcta-kicker{font-size:11px;color:rgba(255,255,255,.5);letter-spacing:2px;margin-bottom:12px;}
+.ftcta-h2{font-size:clamp(20px,3vw,34px);font-weight:800;color:#fff;margin-bottom:8px;}
+.ftcta-sub{font-size:15px;color:rgba(255,255,255,.7);margin-bottom:32px;}
+.ftcta-btn{display:inline-flex;align-items:center;gap:8px;background:#059669;color:#fff;padding:18px 44px;border-radius:8px;font-size:18px;font-weight:700;text-decoration:none;margin-bottom:16px;transition:background .15s;}
+.ftcta-btn:hover{background:#047857;}
+.ftcta-trust{font-size:12px;color:rgba(255,255,255,.45);}
+
+/* ── FOOTER ── */
+.lp-footer{background:#1f2937;color:rgba(255,255,255,.65);text-align:center;padding:24px;font-size:13px;}
+.lp-footer a{color:rgba(255,255,255,.65);text-decoration:none;}
+.lp-footer a:hover{color:#fff;}
+.lp-footer p+p{margin-top:6px;}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ===== NAV ===== -->
+<nav class="lp-nav" role="navigation" aria-label="メインナビゲーション">
+  <div class="lp-nav-inner">
+    <a href="/salary-negotiation-advisor/lp/" class="lp-logo">💼 給与交渉シミュレーター</a>
+    <div class="lp-links">
+      <a href="#features">特徴</a>
+      <a href="#strengths">強み</a>
+      <a href="#steps">使い方</a>
+      <a href="#benefits">結果</a>
+      <a href="#trust">安心</a>
+    </div>
+    <a href="/salary-negotiation-advisor/" class="lp-nav-cta">今すぐ無料診断 →</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="ヒーロー">
+  <div class="hero-bg" role="img" aria-label="給与交渉で成功するビジネスパーソン"></div>
+  <div class="hero-ov"></div>
+  <div class="hero-in">
+    <!-- LEFT -->
+    <div>
+      <div class="hero-badge">🏆 昇給×転職 両シナリオ対応 — 日本唯一のシミュレーター</div>
+      <h1 class="hero-title">給与交渉シミュレーター<br>適正年収×交渉戦略を<br>無料診断</h1>
+      <p class="hero-sub">現在年収・スキル・業界相場を入力するだけで<br>あなたの交渉戦略と目標金額をAIが診断</p>
+      <div class="hero-salary">
+        <div class="hero-salary-lbl">診断例（IT・Web系 / 経験5年）　想定年収レンジ</div>
+        <div>
+          <span class="hero-salary-num">640万〜720万</span>
+          <span class="hero-up">UP!</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="/salary-negotiation-advisor/" class="btn-green">今すぐ無料診断 →</a>
+        <a href="#steps" class="btn-wht">使い方を見る</a>
+      </div>
+      <div class="hero-trust">
+        <span>✓ 無料・登録不要</span>
+        <span>✓ スマホ対応</span>
+        <span>✓ 約1分で診断</span>
+      </div>
+    </div>
+    <!-- RIGHT preview card -->
+    <div class="hero-r" aria-hidden="true">
+      <div class="hero-r-ttl">📊 診断結果プレビュー</div>
+      <img src="../assets/photos/photo_02.jpg" alt="" class="hero-r-img" loading="eager">
+      <div class="hero-r-range">640万〜<span style="color:#059669;">720万</span></div>
+      <div class="hero-r-sub">業界相場比較 適正年収レンジ</div>
+      <div class="mini-bar">
+        <div class="mini-bar-lbl">IT・Web系</div>
+        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:88%;background:#059669;"></div></div>
+      </div>
+      <div class="mini-bar">
+        <div class="mini-bar-lbl">金融・保険</div>
+        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:74%;background:#1D4ED8;"></div></div>
+      </div>
+      <div class="mini-bar">
+        <div class="mini-bar-lbl">製造・メーカー</div>
+        <div class="mini-bar-bg"><div class="mini-bar-fill" style="width:62%;background:#7c3aed;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAIN POINTS ===== -->
+<section class="sec pain-sec" id="pain" aria-labelledby="pain-h2">
+  <div class="sec-in">
+    <div class="sec-hd">
+      <div class="sec-kicker">PROBLEM</div>
+      <h2 class="sec-h2" id="pain-h2">こんなお悩みはありませんか？</h2>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <img src="../assets/photos/photo_03.jpg" alt="年収が適正か分からないと悩むビジネスパーソン" loading="lazy">
+        <div class="pain-card-body">
+          <div class="pain-icon">😔</div>
+          <p class="pain-txt">今の年収が<br>適正なのか<br>分からない</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <img src="../assets/photos/photo_04.jpg" alt="給与交渉の方法が分からないと悩む人" loading="lazy">
+        <div class="pain-card-body">
+          <div class="pain-icon">😰</div>
+          <p class="pain-txt">給与交渉したいけど<br>方法が<br>わからない</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <img src="../assets/photos/photo_05.jpg" alt="転職先への希望年収が言えないと悩む人" loading="lazy">
+        <div class="pain-card-body">
+          <div class="pain-icon">🤔</div>
+          <p class="pain-txt">転職先への<br>適切な希望年収が<br>言えない</p>
+        </div>
+      </div>
+      <div class="pain-card">
+        <img src="../assets/photos/photo_06.jpg" alt="昇給交渉を断られることを恐れる人" loading="lazy">
+        <div class="pain-card-body">
+          <div class="pain-icon">😨</div>
+          <p class="pain-txt">昇給交渉を<br>断られるのが<br>怖い</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="sec feat-sec" id="features" aria-labelledby="feat-h2">
+  <div class="sec-in">
+    <div class="sec-hd">
+      <div class="sec-kicker">FEATURES</div>
+      <h2 class="sec-h2" id="feat-h2">給与交渉シミュレーターの特徴</h2>
+      <p class="sec-lead">3つの強力な機能で交渉準備からスクリプト生成まで完全サポート</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="feat-num">①</div>
+        <h3 class="feat-ttl">市場相場データで<br>目標金額の根拠を定量化</h3>
+        <p class="feat-desc">職種×業界別の市場相場データを活用。あなたの年収が適正かを数値で可視化し、説得力ある交渉根拠を作ります。</p>
+        <img src="../assets/photos/photo_07.jpg" alt="市場相場データ機能" class="feat-img" loading="lazy">
+      </div>
+      <div class="feat-card">
+        <div class="feat-num">②</div>
+        <h3 class="feat-ttl">AI交渉ロールプレイで<br>実践力を強化</h3>
+        <p class="feat-desc">AI採用担当役との会話練習機能で実践的な交渉力を強化。本番前に自信をつけて成功率を高めます。</p>
+        <img src="../assets/photos/photo_08.jpg" alt="AIロールプレイ機能" class="feat-img" loading="lazy">
+      </div>
+      <div class="feat-card">
+        <div class="feat-num">③</div>
+        <h3 class="feat-ttl">交渉メール・スクリプトを<br>自動生成</h3>
+        <p class="feat-desc">診断タイプ別の具体的な交渉スクリプト例文を自動生成。そのまま使えるメールテンプレートも提供します。</p>
+        <img src="../assets/photos/photo_09.jpg" alt="スクリプト自動生成機能" class="feat-img" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STRENGTHS ===== -->
+<section class="sec str-sec" id="strengths" aria-labelledby="str-h2">
+  <div class="sec-in">
+    <div class="sec-hd">
+      <div class="sec-kicker">STRENGTHS</div>
+      <h2 class="sec-h2" id="str-h2">他のツールとここが違う！3つの強み</h2>
+    </div>
+    <div class="str-in">
+      <!-- Chart -->
+      <div class="str-chart">
+        <div class="str-chart-ttl">機能比較（当ツール vs 一般転職サービス）</div>
+        <div class="cbar">
+          <div class="cbar-lbl">市場相場データ分析</div>
+          <div class="cbar-row">
+            <div class="cbar-fill" style="width:88%;background:#1D4ED8;">当ツール 88%</div>
+          </div>
+          <div class="cbar-row">
+            <div class="cbar-fill" style="width:38%;background:#9ca3af;">一般サービス 38%</div>
+          </div>
+        </div>
+        <div class="cbar">
+          <div class="cbar-lbl">交渉スクリプト自動生成</div>
+          <div class="cbar-row">
+            <div class="cbar-fill" style="width:94%;background:#059669;">当ツール 94%</div>
+          </div>
+          <div class="cbar-row">
+            <div class="cbar-fill" style="width:18%;background:#9ca3af;">一般サービス 18%</div>
+          </div>
+        </div>
+        <div class="cbar">
+          <div class="cbar-lbl">昇給×転職 両シナリオ対応</div>
+          <div class="cbar-row">
+            <div class="cbar-fill" style="width:100%;background:#7c3aed;">当ツール 100%</div>
+          </div>
+          <div class="cbar-row">
+            <div class="cbar-fill" style="width:28%;background:#9ca3af;">一般サービス 28%</div>
+          </div>
+        </div>
+        <div class="str-salary-box">
+          <div class="str-salary-lbl">診断結果（想定年収レンジ）</div>
+          <div class="str-salary-num">640万〜<span class="str-salary-up">720万</span></div>
+        </div>
+      </div>
+      <!-- List -->
+      <div>
+        <img src="../assets/photos/photo_10.jpg" alt="給与交渉で年収アップするイメージ" class="str-photo" loading="lazy">
+        <ul class="str-list">
+          <li class="str-item">
+            <div class="str-chk">✓</div>
+            <div>
+              <div class="str-item-ttl">昇給×転職の両シナリオに対応</div>
+              <div class="str-item-sub">日本唯一の両対応シミュレーター。どちらの交渉にも最適解を提供</div>
+            </div>
+          </li>
+          <li class="str-item">
+            <div class="str-chk">✓</div>
+            <div>
+              <div class="str-item-ttl">業界別平均年収との比較グラフ</div>
+              <div class="str-item-sub">交渉根拠を可視化し、説得力を大幅に向上</div>
+            </div>
+          </li>
+          <li class="str-item">
+            <div class="str-chk">✓</div>
+            <div>
+              <div class="str-item-ttl">診断タイプ別の具体的スクリプト</div>
+              <div class="str-item-sub">あなたのタイプに合った言葉でそのまま使える</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEPS ===== -->
+<section class="sec step-sec" id="steps" aria-labelledby="step-h2">
+  <div class="sec-in">
+    <div class="sec-hd">
+      <div class="sec-kicker">HOW TO USE</div>
+      <h2 class="sec-h2" id="step-h2">使い方とても簡単！3ステップ</h2>
+    </div>
+    <div class="step-grid">
+      <div class="step-card">
+        <img src="../assets/photos/photo_11.jpg" alt="現在情報を入力するステップ" class="step-img" loading="lazy">
+        <div class="step-body">
+          <div class="step-badge" aria-label="ステップ1">1</div>
+          <h3 class="step-ttl">現在情報を入力</h3>
+          <p class="step-desc">現在の年収・職種・業界・スキルを選択。約5問の質問に答えるだけ、1分で完了します。</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <img src="../assets/photos/photo_12.jpg" alt="市場相場と比較するステップ" class="step-img" loading="lazy">
+        <div class="step-body">
+          <div class="step-badge" aria-label="ステップ2">2</div>
+          <h3 class="step-ttl">市場相場と比較</h3>
+          <p class="step-desc">業界別の市場相場データと自分の年収を比較。適正年収レンジと交渉目標額を算出します。</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <img src="../assets/photos/photo_13.jpg" alt="交渉戦略を確認するステップ" class="step-img" loading="lazy">
+        <div class="step-body">
+          <div class="step-badge" aria-label="ステップ3">3</div>
+          <h3 class="step-ttl">交渉戦略を確認</h3>
+          <p class="step-desc">あなたのタイプに合った交渉戦略とスクリプトを確認。そのまま使えるメールテンプレートも取得できます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BENEFITS ===== -->
+<section class="sec ben-sec" id="benefits" aria-labelledby="ben-h2">
+  <div class="sec-in">
+    <div class="sec-hd">
+      <div class="sec-kicker">RESULTS</div>
+      <h2 class="sec-h2" id="ben-h2">診断後、こんな未来が手に入ります</h2>
+    </div>
+    <div class="ben-grid">
+      <div class="ben-card">
+        <div class="ben-thumb"><img src="../assets/photos/photo_14.jpg" alt="" loading="lazy"></div>
+        <div>
+          <div class="ben-ttl">適正年収が明確になる</div>
+          <div class="ben-desc">業界・職種・経験年数から正確な市場価値を数値で把握</div>
+        </div>
+      </div>
+      <div class="ben-card">
+        <div class="ben-thumb"><img src="../assets/photos/photo_15.jpg" alt="" loading="lazy"></div>
+        <div>
+          <div class="ben-ttl">自信を持って交渉できる</div>
+          <div class="ben-desc">数値根拠のある交渉で成功率が大幅に向上する</div>
+        </div>
+      </div>
+      <div class="ben-card">
+        <div class="ben-thumb"><img src="../assets/photos/photo_16.jpg" alt="" loading="lazy"></div>
+        <div>
+          <div class="ben-ttl">年収アップを実現できる</div>
+          <div class="ben-desc">適切な戦略で転職・昇給交渉を成功させる</div>
+        </div>
+      </div>
+      <div class="ben-card">
+        <div class="ben-thumb"><img src="../assets/photos/photo_17.jpg" alt="" loading="lazy"></div>
+        <div>
+          <div class="ben-ttl">交渉スクリプトが手に入る</div>
+          <div class="ben-desc">そのまま使えるメール文例・会話スクリプトを取得</div>
+        </div>
+      </div>
+      <div class="ben-card">
+        <div class="ben-thumb"><img src="../assets/photos/photo_18.jpg" alt="" loading="lazy"></div>
+        <div>
+          <div class="ben-ttl">転職市場を把握できる</div>
+          <div class="ben-desc">業界別の転職動向と年収トレンドが一目でわかる</div>
+        </div>
+      </div>
+      <div class="ben-card">
+        <div class="ben-thumb"><img src="../assets/photos/photo_19.jpg" alt="" loading="lazy"></div>
+        <div>
+          <div class="ben-ttl">長期キャリアを設計できる</div>
+          <div class="ben-desc">今後のキャリアパスと年収目標を明確に描けるようになる</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST ===== -->
+<section class="sec trust-sec" id="trust" aria-labelledby="trust-h2">
+  <div class="sec-in">
+    <div class="sec-hd" style="text-align:center;">
+      <div class="sec-kicker" style="text-align:center;">TRUST</div>
+      <h2 class="sec-h2" id="trust-h2" style="text-align:center;">安心してご利用いただけます</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">🔒</div>
+        <div class="trust-ttl">情報収集なし</div>
+        <div class="trust-desc">入力データはデバイス内のみで処理。サーバーへの送信なし</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">✨</div>
+        <div class="trust-ttl">完全無料</div>
+        <div class="trust-desc">登録不要・完全無料で全機能をご利用いただけます</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">📱</div>
+        <div class="trust-ttl">スマホ対応</div>
+        <div class="trust-desc">スマートフォン・タブレット・PCすべてに完全対応</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">⚡</div>
+        <div class="trust-ttl">約1分で診断</div>
+        <div class="trust-desc">5問の質問に答えるだけで交渉戦略がすぐにわかります</div>
+      </div>
+    </div>
+    <div class="trust-photos">
+      <img src="../assets/photos/photo_20.jpg" alt="安心のサービス提供" loading="lazy">
+      <img src="../assets/photos/photo_21.jpg" alt="実績豊富なサービス" loading="lazy">
+      <img src="../assets/photos/photo_22.jpg" alt="多くのユーザーが利用" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== AFFILIATE ===== -->
+<section class="aff-sec" aria-labelledby="aff-h2">
+  <div class="aff-in">
+    <h2 class="aff-ttl" id="aff-h2">🚀 おすすめ転職エージェント（診断後の次のステップ）</h2>
+    <div class="aff-grid">
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B3TF5+8CQ7U2+5B0Y+5Z6WY" rel="nofollow noopener noreferrer" target="_blank" class="aff-card">
+        <div class="aff-card-img"><img src="../assets/photos/photo_07.jpg" alt="MyVision" loading="lazy"></div>
+        <div>
+          <div class="aff-card-ttl">MyVision（転職相談・無料）</div>
+          <div class="aff-card-sub">年収アップ転職を専門家がサポート</div>
+        </div>
+      </a>
+      <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B3TF5+8CQ7U2+5B0Y+5Z6WY" alt="" style="display:none;">
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ5+C2OQY2+14CS+68EPE" rel="nofollow noopener noreferrer" target="_blank" class="aff-card">
+        <div class="aff-card-img"><img src="../assets/photos/photo_08.jpg" alt="リクルートエージェント" loading="lazy"></div>
+        <div>
+          <div class="aff-card-ttl">リクルートエージェント</div>
+          <div class="aff-card-sub">業界最大手の転職支援サービス</div>
+        </div>
+      </a>
+      <img border="0" width="1" height="1" src="https://www5.a8.net/0.gif?a8mat=4B3WJ5+C2OQY2+14CS+68EPE" alt="" style="display:none;">
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER CTA ===== -->
+<section class="ftcta" aria-label="行動を促すセクション">
+  <div class="ftcta-kicker">まず1分で、あなたの交渉力を見える化</div>
+  <h2 class="ftcta-h2">給与交渉シミュレーター</h2>
+  <p class="ftcta-sub">現在年収・スキル・業界相場から最適な交渉戦略を診断します</p>
+  <div>
+    <a href="/salary-negotiation-advisor/" class="ftcta-btn">今すぐ無料診断 →</a>
+  </div>
+  <div class="ftcta-trust">✓ 無料 &nbsp;✓ 登録不要 &nbsp;✓ スマホ対応 &nbsp;✓ 約1分で完了</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="lp-footer" role="contentinfo">
+  <p>
+    <a href="https://appadaycreator.com/">AppADayCreator</a>
+    &nbsp;|&nbsp; <a href="../privacy-policy.html">プライバシーポリシー</a>
+    &nbsp;|&nbsp; <a href="../terms.html">利用規約</a>
+    &nbsp;|&nbsp; <a href="../contact.html">お問い合わせ</a>
+  </p>
+  <p style="margin-top:6px;font-size:11px;opacity:0.5;">© 2026 AppADayCreator. All services are free. 本サービスはアフィリエイト広告を掲載しています。</p>
+</footer>
+
+</body>
+</html>
